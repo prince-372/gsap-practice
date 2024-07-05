@@ -53,7 +53,7 @@ const Process = () => {
             </div>
           
             <div className=" pl-3 absolute  flex flex-col top-[0%] md:flex-row justify-between md:relative max-w-[936px]">
-              <div className='border-t border-[#313543] w-full absolute left-3 top-1/2 max-w-[920px] rotate-90 md:rotate-0'></div>
+              <div className='border-t border-[#313543] w-full absolute left-3 top-1/2 max-w-[920px] hidden md:block'></div>
               {Array(6).fill().map((_, index) => (
                 <div key={index} ref={(el) => (dotRefs.current[index] = el)} className='max-w-[54px] relative py-[52px]'>
                   <Image className={`mx-auto ${index % 2 === 0 ? 'rotate-90 md:rotate-0 absolute md:top-0 top-1/2 -translate-y-1/2 md:translate-y-0' : '-rotate-90 md:rotate-0 absolute md:bottom-0 bottom-1/2 translate-y-1/2 md:translate-y-0'} max-md:-right-2 md:left-1/2 -translate-x-1/2`} src={index % 2 === 0 ? doted : downdoted} height={52} alt='dottedline' />
